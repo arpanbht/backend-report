@@ -1,0 +1,50 @@
+// route for auth
+
+// register
+http://localhost:8000/api/users/register
+
+{
+    "firstName": "Arpan",
+    "lastName": "Bhattacharya",
+    "email": "apubhattacharya71@gmail.com",
+    "password": "arpan"
+}
+
+// login
+http://localhost:8000/api/users/login
+
+{
+    "email": "apubhattacharya71@gmail.com",
+    "password": "arpan"
+}
+
+// get otp
+http://localhost:8000/api/users/send-email
+
+{
+    "email": "your-email"
+}
+
+// verify otp
+http://localhost:8000/api/users/verify-otp
+
+{
+    "otp": "your-otp"
+}
+
+// update password
+http://localhost:8000/api/users/update-password
+
+{
+    "oldPassword": "your-old-password",
+    "newPassword": "your-new-password",
+    "confPassword": "your-new-password"
+}
+
+// forget password
+http://localhost:8000/api/users/forget-password
+
+{
+    "newPassword": "your-new-password",
+    "confPassword": "your-new-password"
+}
